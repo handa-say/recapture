@@ -1,0 +1,40 @@
+{
+  "challenges": [
+    {
+      "id": "civil-rights-1",
+      "topic": "history",
+      "source": "local",
+      "prompt": "Select the person who advocated the civil rights movement in the US.",
+      "tiles": [
+        { "id": "mlk", "img": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Martin_Luther_King%2C_Jr..jpg", "label": "Martin Luther King Jr." },
+        { "id": "other1", "img": "https://picsum.photos/id/1011/300/300", "label": "Random Person 1" },
+        { "id": "other2", "img": "https://picsum.photos/id/1027/300/300", "label": "Random Person 2" },
+        { "id": "other3", "img": "https://picsum.photos/id/1005/300/300", "label": "Random Person 3" },
+        { "id": "other4", "img": "https://picsum.photos/id/1001/300/300", "label": "Random Person 4" },
+        { "id": "other5", "img": "https://picsum.photos/id/1000/300/300", "label": "Random Person 5" },
+        { "id": "other6", "img": "https://picsum.photos/id/1025/300/300", "label": "Random Person 6" },
+        { "id": "other7", "img": "https://picsum.photos/id/1035/300/300", "label": "Random Person 7" },
+        { "id": "other8", "img": "https://picsum.photos/id/1062/300/300", "label": "Random Person 8" }
+      ],
+      "correctIds": ["mlk"]
+    },
+    {
+      "id": "nature-1",
+      "topic": "nature",
+      "source": "external",
+      "prompt": "Select all images that contain a mountain.",
+      "tiles": [
+        { "id": "mountain1", "img": "https://picsum.photos/id/1018/300/300", "label": "Mountain 1" },
+        { "id": "mountain2", "img": "https://picsum.photos/id/1043/300/300", "label": "Mountain 2" },
+        { "id": "non1", "img": "https://picsum.photos/id/1020/300/300", "label": "Road" },
+        { "id": "non2", "img": "https://picsum.photos/id/237/300/300", "label": "Dog" },
+        { "id": "non3", "img": "https://picsum.photos/id/106/300/300", "label": "Sea" },
+        { "id": "non4", "img": "https://picsum.photos/id/433/300/300", "label": "City" },
+        { "id": "non5", "img": "https://picsum.photos/id/177/300/300", "label": "Bench" },
+        { "id": "non6", "img": "https://picsum.photos/id/62/300/300", "label": "Flowers" },
+        { "id": "non7", "img": "https://picsum.photos/id/12/300/300", "label": "Street" }
+      ],
+      "correctIds": ["mountain1", "mountain2"]
+    }
+  ]
+}
