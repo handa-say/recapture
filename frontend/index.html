@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parody Image Challenge</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="layout">
+    <div class="gcaptcha">
+      <div class="gcaptcha-header">
+        <div class="gcaptcha-logo" aria-hidden="true">🤖</div>
+        <div>
+          <div class="gcaptcha-title-main">Image challenge (parody)</div>
+          <div class="gcaptcha-instruction" id="gcaptcha-question"></div>
+        </div>
+      </div>
+
+      <div class="gcaptcha-controls">
+        <label>
+          Topic
+          <select id="topic-select"></select>
+        </label>
+        <label>
+          Image source
+          <select id="source-select"></select>
+        </label>
+      </div>
+
+      <div class="gcaptcha-grid" id="gcaptcha-grid"></div>
+
+      <div class="gcaptcha-footer">
+        <div class="gcaptcha-footer-left">
+          <button class="gcaptcha-icon-button" id="gcaptcha-refresh" title="New challenge" aria-label="New challenge">⟳</button>
+          <button class="gcaptcha-icon-button" id="gcaptcha-hint" title="Hint" aria-label="Hint">?</button>
+        </div>
+        <button class="gcaptcha-verify" id="gcaptcha-verify">Verify</button>
+      </div>
+
+      <div class="gcaptcha-status" id="gcaptcha-status"></div>
+      <div class="gcaptcha-disclaimer">Parody demo – not affiliated with Google or reCAPTCHA.</div>
+    </div>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

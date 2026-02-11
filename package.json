@@ -1,0 +1,15 @@
+{
+  "name": "recapture",
+  "version": "0.1.0",
+  "description": "Parody image challenge demo with frontend/backend split",
+  "type": "module",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "node --watch backend/src/server.js",
+    "check": "node --check backend/src/server.js && node --check backend/src/challengeService.js && node --check backend/src/providers/challengeProvider.js && node --check frontend/app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
