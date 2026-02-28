@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>寿司オーダーゲーム</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <h1>🍣 寿司はこび職人</h1>
+      <p class="lead">
+        お客さんの注文どおりに <strong>ネタ → お米 → お客さん</strong> の順でクリック！
+        ミスや時間切れが続くと怒って帰ってしまいます。
+      </p>
+
+      <section class="hud">
+        <div>スコア: <span id="score">0</span></div>
+        <div>連続成功: <span id="combo">0</span></div>
+        <div>怒りゲージ: <span id="lives">3</span></div>
+      </section>
+
+      <section class="customers" id="customers"></section>
+
+      <section class="workbench">
+        <h2>ネタ</h2>
+        <div class="toppings" id="toppings"></div>
+        <button id="riceBtn" class="rice">🍚 お米</button>
+      </section>
+
+      <section class="status">
+        <div>現在の手順: <span id="stepLabel">ネタを選んでください</span></div>
+        <div class="timer-wrap" aria-label="制限時間">
+          <div class="timer" id="timerBar"></div>
+        </div>
+      </section>
+
+      <button id="startBtn" class="start">ゲーム開始</button>
+      <p id="message" class="message">準備OK？開始を押してね。</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
